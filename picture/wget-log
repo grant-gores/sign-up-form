@@ -1,0 +1,11 @@
+--2025-05-21 17:19:21--  https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80
+Resolving images.unsplash.com (images.unsplash.com)... 151.101.2.208, 151.101.194.208, 151.101.130.208, ...
+Connecting to images.unsplash.com (images.unsplash.com)|151.101.2.208|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 980244 (957K) [image/jpeg]
+Saving to: ‘leaves.jpg’
+
+leaves.jpg                  0%[                                    ]       0  --.-KB/s               leaves.jpg                100%[===================================>] 957.27K  5.47MB/s    in 0.2s    
+
+2025-05-21 17:19:22 (5.47 MB/s) - ‘leaves.jpg’ saved [980244/980244]
+
