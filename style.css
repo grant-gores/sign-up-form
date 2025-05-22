@@ -5,6 +5,84 @@
   font-style: normal;
 }
 
-.logo-header {
-  font-family: 'Norse', serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Panel: 40% width, background image */
+.left-panel {
+  width: 40%;
+  background-image: url('./picture/leaves.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Transparent black overlay behind logo */
+.logo-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* black with transparency */
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Custom font text */
+.logo-text {
+  font-family: 'Norse', serif; /* Assuming you've loaded it with @font-face */
+  font-size: 6rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* Logo image (optional) */
+.logo {
+  width: 100px;
+}
+
+/* Right Panel: 60% width */
+.right-panel {
+  width: 60%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 25%; /* <-- 30% down from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }

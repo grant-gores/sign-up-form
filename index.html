@@ -8,11 +8,58 @@
 </head>
 <body>
     <div class="container">
+        <!-- Left Panel (40%) -->
         <div class="left-panel">
-        <h1 class="logo-header">ODIN</h1>
+            <div class="logo-overlay">
+            <img src="./picture/logo.png" alt="Logo" class="logo">
+            <h1 class="logo-text">ODIN</h1>
+            </div>
         </div>
-        <div class="right-panel">
 
+        <!-- Right Panel (60%) -->
+        <div class="right-panel">
+        <div class="form-header">
+        <h2>
+            This is not a real online service! You know you need
+            something like this in your life to help you realize your
+            deepest dreams.<br>Sign up now to get started.
+        </h2>
+
+        <h2 class="sub-message">
+            You know you want to.
+        </h2>
+        </div>
+
+        <form class="signup-form">
+            <h2>Let's do this!</h2>
+            <div class="name-container">
+                <div class="input-group">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="password-container">
+                <div class="input-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Create Account</button>
+        </form>
+
+        <p class="login-prompt">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
