@@ -29,8 +29,10 @@ body, html {
   background-position: center;
   position: relative;
   display: flex;
+  flex-direction: column; /* stack children vertically */
+  justify-content: space-between; /* space between top and bottom */
   align-items: center;
-  justify-content: center;
+  padding: 1rem; /* optional: adds breathing room */
 }
 
 /* Transparent black overlay behind logo */
@@ -55,18 +57,9 @@ body, html {
   width: 100px;
 }
 
-/* Right Panel: 60% width */
-.right-panel {
-  width: 60%;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .logo-overlay {
   position: absolute;
-  top: 25%; /* <-- 30% down from the top */
+  top: 25%; /* <-- 25% down from the top */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -85,4 +78,132 @@ body, html {
 .form-header h2 {
   line-height: 1.5;
   margin-bottom: 1rem;
+}
+
+.photo-credits {
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: #eee;
+  text-align: center;
+}
+
+.photo-credits a {
+  color: #eee;
+}
+
+.photo-credits a:hover {
+  text-decoration: underline;
+}
+/* ------------------------------------ */
+/* Right Panel: 60% width */
+.right-panel {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signup-form {
+  width: 100%;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* subtle bottom shadow */
+  background-color: #fff;
+  padding-left: 3rem;
+}
+
+.form-header {
+  margin-top: 1vh;
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.form-header h2 {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.form-title {
+  padding-bottom: 2rem;
+}
+
+.name-container,
+.info-container,
+.password-container {
+  display: flex;
+  gap: 4rem; /* spacing between columns */
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+
+.password-container {
+  padding-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* so both inputs fill evenly */
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  border-color: #E5E7EB;
+}
+
+label {
+  font-weight: bold;
+  color: darkslategrey;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+input[type="password"]:invalid {
+  border: 2px solid #dc2626; /* Red-600 */
+}
+
+input[type="password"]:valid {
+  border: 2px solid #3b82f6; /* Blue-500 */
+}
+
+input:not([type="password"]):valid {
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.bottom-content{
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.submit-button {
+  width: 30%;
+  background-color: #596D48;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.15rem;
+  padding: 0.75rem;
+  border: none;
+  font-weight: 600;
+}
+
+.login-prompt {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.log-in {
+  font-size: 1rem;
+  color: #596D48;
+  text-decoration: none;
+  font-weight: 600;
 }

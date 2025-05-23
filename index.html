@@ -11,55 +11,75 @@
         <!-- Left Panel (40%) -->
         <div class="left-panel">
             <div class="logo-overlay">
-            <img src="./picture/logo.png" alt="Logo" class="logo">
-            <h1 class="logo-text">ODIN</h1>
+                <img src="./picture/logo.png" alt="Logo" class="logo">
+                <h1 class="logo-text">ODIN</h1>
             </div>
+            <p class="photo-credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </div>
 
         <!-- Right Panel (60%) -->
         <div class="right-panel">
-        <div class="form-header">
-        <h2>
-            This is not a real online service! You know you need
-            something like this in your life to help you realize your
-            deepest dreams.<br>Sign up now to get started.
-        </h2>
+            <div class="form-header">
+                <h2>
+                    This is not a real online service! You know you need
+                    something like this in your life to help you realize your
+                    deepest dreams.<br>Sign up now to get started.
+                </h2>
 
-        <h2 class="sub-message">
-            You know you want to.
-        </h2>
-        </div>
-
-        <form class="signup-form">
-            <h2>Let's do this!</h2>
-            <div class="name-container">
-                <div class="input-group">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
+                <h2 class="sub-message">
+                    You know you want to.
+                </h2>
             </div>
 
-            <div class="password-container">
-                <div class="input-group">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
+            <form id="signup-form" class="signup-form">
+                <div class="form-title">
+                    <h2>Let's do this!</h2>
+                </div>
+                <div class="name-container">
+                    <div class="input-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
                 </div>
 
-                <div class="input-group">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="info-container">
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email"
+                        title="Please enter a valid email that contains an @ and ends with .com"
+                        required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number"
+                        pattern="[0-9]{10}"
+                        title="Please enter a valid phone number (e.g., 1231231233)"
+                        required>
+                    </div>
                 </div>
+
+                <div class="password-container">
+                    <div class="input-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required minlength="6" maxlength="60">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required minlength="6" maxlength="60">
+                    </div>
+                </div>
+            </form>
+            <div class="bottom-content">
+                <button type="submit" form="signup-form" class="submit-button">Create Account</button>
+                <p class="login-prompt">Already have an account? <a href="#" class="log-in">Log in</a></p>
             </div>
-
-            <button type="submit" class="submit-button">Create Account</button>
-        </form>
-
-        <p class="login-prompt">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
